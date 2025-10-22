@@ -1,0 +1,690 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red220\green229\blue239;\red123\green143\blue171;\red247\green249\blue250;
+\red87\green194\blue193;\red224\green203\blue103;\red129\green201\blue99;\red192\green80\blue78;}
+{\*\expandedcolortbl;;\cssrgb\c89020\c91765\c94902;\cssrgb\c55294\c63137\c72549;\cssrgb\c97647\c98039\c98431;
+\cssrgb\c40000\c80000\c80000;\cssrgb\c90196\c82745\c47843;\cssrgb\c56863\c81569\c46275;\cssrgb\c80392\c40000\c37647;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!\cf3 \strokec3 DOCTYPE html\cf2 \strokec2 >\cf4 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 <html \cf6 \strokec6 lang\cf5 \strokec5 ="\cf7 \strokec7 en\cf5 \strokec5 ">\cf4 \strokec4 \
+\cf5 \strokec5 <head>\cf4 \strokec4 \
+    \cf5 \strokec5 <meta \cf6 \strokec6 charset\cf5 \strokec5 ="\cf7 \strokec7 UTF-8\cf5 \strokec5 ">\cf4 \strokec4 \
+    \cf5 \strokec5 <meta \cf6 \strokec6 name\cf5 \strokec5 ="\cf7 \strokec7 viewport\cf5 \strokec5 " \cf6 \strokec6 content\cf5 \strokec5 ="\cf7 \strokec7 width=device-width, initial-scale=1.0\cf5 \strokec5 ">\cf4 \strokec4 \
+    \cf5 \strokec5 <title>\cf4 \strokec4 YieldSync | Digital Marketing Agency\cf5 \strokec5 </title>\cf4 \strokec4 \
+    \cf5 \strokec5 <link \cf6 \strokec6 rel\cf5 \strokec5 ="\cf7 \strokec7 stylesheet\cf5 \strokec5 " \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\cf5 \strokec5 ">\cf4 \strokec4 \
+    \cf5 \strokec5 <style>\cf4 \strokec4 \
+        /* Base Styles & Variables */\
+        :root \{\
+            --primary-black: #000000;\
+            --dark-gray: #1a1a1a;\
+            --medium-gray: #333333;\
+            --light-gray: #4a4a4a;\
+            --cream: #f5f5f0;\
+            --white: #ffffff;\
+            --transparent-black: rgba(0, 0, 0, 0.7);\
+            --transparent-white: rgba(255, 255, 255, 0.7);\
+        \}\
+        \
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+        \
+        body \{\
+            font-family: "Helvetica Neue", Arial, sans-serif;\
+            background-color: var(--primary-black);\
+            color: var(--white);\
+            line-height: 1.6;\
+            overflow-x: hidden;\
+        \}\
+        \
+        /* Typography */\
+        h1, h2, h3, h4 \{\
+            font-weight: 500; /* Helvetica Medium */\
+            letter-spacing: 1px;\
+        \}\
+        \
+        p, li, a \{\
+            font-weight: 300; /* Helvetica Light */\
+        \}\
+        \
+        .ultra-light \{\
+            font-weight: 100; /* Helvetica Ultra Light */\
+        \}\
+        \
+        /* Header Styles */\
+        header \{\
+            padding: 2rem 0;\
+            position: fixed;\
+            width: 100%;\
+            top: 0;\
+            z-index: 1000;\
+            background-color: rgba(0, 0, 0, 0.8);\
+            backdrop-filter: blur(10px);\
+        \}\
+        \
+        .header-container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            padding: 0 2rem;\
+        \}\
+        \
+        .logo \{\
+            font-size: 1.8rem;\
+            font-weight: 500;\
+            position: relative;\
+            padding: 0.5rem 1rem;\
+        \}\
+        \
+        .logo::before, .logo::after \{\
+            content: '';\
+            position: absolute;\
+            width: 100%;\
+            height: 100%;\
+            border: 1px solid var(--white);\
+            top: 0;\
+            left: 0;\
+        \}\
+        \
+        .logo::before \{\
+            transform: translate(-5px, -5px);\
+        \}\
+        \
+        .logo::after \{\
+            transform: translate(5px, 5px);\
+        \}\
+        \
+        .nav-links \{\
+            display: flex;\
+            gap: 2rem;\
+        \}\
+        \
+        .nav-links a \{\
+            color: var(--white);\
+            text-decoration: none;\
+            font-size: 0.9rem;\
+            transition: color 0.3s ease;\
+        \}\
+        \
+        .nav-links a:hover \{\
+            color: var(--cream);\
+        \}\
+        \
+        .social-icons \{\
+            display: flex;\
+            gap: 1rem;\
+        \}\
+        \
+        .social-icons a \{\
+            color: var(--white);\
+            font-size: 1.2rem;\
+            opacity: 0.7;\
+            animation: fadeInOut 3s infinite;\
+        \}\
+        \
+        @keyframes fadeInOut \{\
+            0%, 100% \{ opacity: 0.5; \}\
+            50% \{ opacity: 1; \}\
+        \}\
+        \
+        /* Hero Section */\
+        .hero \{\
+            height: 100vh;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        \
+        .hero-content \{\
+            text-align: center;\
+            z-index: 2;\
+            max-width: 800px;\
+            padding: 0 2rem;\
+        \}\
+        \
+        .hero-title \{\
+            font-size: 4rem;\
+            margin-bottom: 1.5rem;\
+            position: relative;\
+            transition: all 0.5s ease;\
+        \}\
+        \
+        .hero-strap-line \{\
+            font-size: 1.2rem;\
+            color: var(--cream);\
+            margin-bottom: 2rem;\
+            font-weight: 300;\
+        \}\
+        \
+        .hero-image \{\
+            position: absolute;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;\
+            animation: slowMove 20s infinite alternate;\
+            z-index: 1;\
+        \}\
+        \
+        @keyframes slowMove \{\
+            0% \{ transform: translateX(-5px); \}\
+            100% \{ transform: translateX(5px); \}\
+        \}\
+        \
+        /* Grid System */\
+        .grid-container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 2rem;\
+        \}\
+        \
+        .two-column-grid \{\
+            display: grid;\
+            grid-template-columns: 1fr 1fr;\
+            gap: 4rem;\
+            margin: 6rem 0;\
+        \}\
+        \
+        /* Portfolio Section */\
+        .portfolio \{\
+            padding: 8rem 0;\
+        \}\
+        \
+        .section-title \{\
+            font-size: 2.5rem;\
+            margin-bottom: 3rem;\
+            text-align: center;\
+            position: relative;\
+        \}\
+        \
+        .portfolio-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(2, 1fr);\
+            gap: 2rem;\
+        \}\
+        \
+        .portfolio-item \{\
+            position: relative;\
+            overflow: hidden;\
+            height: 400px;\
+            background-color: var(--dark-gray);\
+        \}\
+        \
+        .portfolio-image \{\
+            width: 100%;\
+            height: 100%;\
+            object-fit: cover;\
+            transition: transform 0.5s ease;\
+        \}\
+        \
+        .portfolio-item:hover .portfolio-image \{\
+            transform: scale(1.05);\
+        \}\
+        \
+        .portfolio-item::after \{\
+            content: '';\
+            position: absolute;\
+            top: 0;\
+            left: -100%;\
+            width: 100%;\
+            height: 100%;\
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);\
+            transition: left 0.5s ease;\
+        \}\
+        \
+        .portfolio-item:hover::after \{\
+            left: 100%;\
+        \}\
+        \
+        .portfolio-info \{\
+            position: absolute;\
+            bottom: 0;\
+            left: 0;\
+            width: 100%;\
+            padding: 1.5rem;\
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));\
+            color: var(--white);\
+            transform: translateY(100%);\
+            transition: transform 0.3s ease;\
+        \}\
+        \
+        .portfolio-item:hover .portfolio-info \{\
+            transform: translateY(0);\
+        \}\
+        \
+        /* Scrolling Portfolio */\
+        .scrolling-portfolio \{\
+            height: 25vh;\
+            background-color: var(--dark-gray);\
+            overflow: hidden;\
+            position: relative;\
+        \}\
+        \
+        .scrolling-container \{\
+            display: flex;\
+            width: 200%;\
+            animation: scroll 30s linear infinite;\
+        \}\
+        \
+        .scrolling-item \{\
+            width: 300px;\
+            height: 200px;\
+            margin: 0 1rem;\
+            background-color: var(--medium-gray);\
+            flex-shrink: 0;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        \
+        .scrolling-item img \{\
+            width: 100%;\
+            height: 100%;\
+            object-fit: cover;\
+        \}\
+        \
+        @keyframes scroll \{\
+            0% \{ transform: translateX(0); \}\
+            100% \{ transform: translateX(-50%); \}\
+        \}\
+        \
+        /* Content Sections */\
+        .content-section \{\
+            padding: 6rem 0;\
+        \}\
+        \
+        .content-grid \{\
+            display: grid;\
+            grid-template-columns: 1fr 1fr;\
+            gap: 4rem;\
+        \}\
+        \
+        .content-title \{\
+            font-size: 2rem;\
+            margin-bottom: 2rem;\
+            position: relative;\
+        \}\
+        \
+        .content-list \{\
+            list-style: none;\
+        \}\
+        \
+        .content-list li \{\
+            padding: 0.8rem 0;\
+            border-bottom: 1px solid var(--light-gray);\
+            opacity: 0;\
+            transform: translateY(20px);\
+            transition: all 0.5s ease;\
+        \}\
+        \
+        .content-list.fade-in li \{\
+            opacity: 1;\
+            transform: translateY(0);\
+        \}\
+        \
+        .content-list li:nth-child(1) \{ transition-delay: 0.1s; \}\
+        .content-list li:nth-child(2) \{ transition-delay: 0.2s; \}\
+        .content-list li:nth-child(3) \{ transition-delay: 0.3s; \}\
+        .content-list li:nth-child(4) \{ transition-delay: 0.4s; \}\
+        .content-list li:nth-child(5) \{ transition-delay: 0.5s; \}\
+        \
+        /* Footer */\
+        footer \{\
+            padding: 4rem 0 2rem;\
+            background-color: var(--dark-gray);\
+            text-align: center;\
+        \}\
+        \
+        .footer-content \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 2rem;\
+        \}\
+        \
+        .footer-links \{\
+            display: flex;\
+            justify-content: center;\
+            gap: 2rem;\
+            margin-bottom: 2rem;\
+        \}\
+        \
+        .footer-links a \{\
+            color: var(--white);\
+            text-decoration: none;\
+            font-size: 0.9rem;\
+        \}\
+        \
+        .copyright \{\
+            color: var(--light-gray);\
+            font-size: 0.8rem;\
+        \}\
+        \
+        /* Responsive Design */\
+        @media (max-width: 768px) \{\
+            .two-column-grid, .content-grid, .portfolio-grid \{\
+                grid-template-columns: 1fr;\
+            \}\
+            \
+            .hero-title \{\
+                font-size: 2.5rem;\
+            \}\
+            \
+            .nav-links \{\
+                display: none;\
+            \}\
+        \}\
+    \cf5 \strokec5 </style>\cf4 \strokec4 \
+\cf5 \strokec5 </head>\cf4 \strokec4 \
+\cf5 \strokec5 <body>\cf4 \strokec4 \
+    \cf3 \strokec3 <!-- Header -->\cf4 \strokec4 \
+    \cf5 \strokec5 <header>\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 header-container\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 logo\cf5 \strokec5 ">\cf4 \strokec4 YieldSync\cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <nav \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 nav-links\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #products\cf5 \strokec5 ">\cf4 \strokec4 Products\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #reviews\cf5 \strokec5 ">\cf4 \strokec4 Reviews\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #sectors\cf5 \strokec5 ">\cf4 \strokec4 Sectors\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #services\cf5 \strokec5 ">\cf4 \strokec4 Services\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #about\cf5 \strokec5 ">\cf4 \strokec4 About Us\cf5 \strokec5 </a>\cf4 \strokec4 \
+            \cf5 \strokec5 </nav>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 social-icons\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #\cf5 \strokec5 "><i \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 fab fa-facebook-f\cf5 \strokec5 "></i></a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #\cf5 \strokec5 "><i \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 fab fa-twitter\cf5 \strokec5 "></i></a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #\cf5 \strokec5 "><i \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 fab fa-instagram\cf5 \strokec5 "></i></a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #\cf5 \strokec5 "><i \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 fab fa-linkedin-in\cf5 \strokec5 "></i></a>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </header>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Hero Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 hero\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 hero-image\cf5 \strokec5 "></div>\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 hero-content\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <h1 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 hero-title\cf5 \strokec5 ">\cf4 \strokec4 YIELDSYNC\cf5 \strokec5 </h1>\cf4 \strokec4 \
+            \cf5 \strokec5 <p \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 hero-strap-line\cf5 \strokec5 ">\cf4 \strokec4 Strategic Digital Marketing for Modern Businesses\cf5 \strokec5 </p>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Portfolio Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 products\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 section-title\cf5 \strokec5 ">\cf4 \strokec4 Our Work\cf5 \strokec5 </h2>\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-item\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Real Estate Website\cf5 \strokec5 " \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-image\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-info\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <h3>\cf4 \strokec4 Luxury Real Estate\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                    \cf5 \strokec5 <p>\cf4 \strokec4 High-end property showcase with immersive virtual tours\cf5 \strokec5 </p>\cf4 \strokec4 \
+                \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-item\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 E-commerce Website\cf5 \strokec5 " \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-image\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-info\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <h3>\cf4 \strokec4 Premium Retail\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                    \cf5 \strokec5 <p>\cf4 \strokec4 Streamlined e-commerce experience with AI recommendations\cf5 \strokec5 </p>\cf4 \strokec4 \
+                \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-item\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Corporate Website\cf5 \strokec5 " \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-image\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-info\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <h3>\cf4 \strokec4 Financial Services\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                    \cf5 \strokec5 <p>\cf4 \strokec4 Corporate website with secure client portal integration\cf5 \strokec5 </p>\cf4 \strokec4 \
+                \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-item\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Hospitality Website\cf5 \strokec5 " \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-image\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 portfolio-info\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <h3>\cf4 \strokec4 Luxury Hospitality\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                    \cf5 \strokec5 <p>\cf4 \strokec4 Hotel booking platform with seamless reservation system\cf5 \strokec5 </p>\cf4 \strokec4 \
+                \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Scrolling Portfolio -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-portfolio\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-container\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 1\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 2\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 3\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 4\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 5\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 6\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 7\cf5 \strokec5 "></div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 scrolling-item\cf5 \strokec5 "><img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Project 8\cf5 \strokec5 "></div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Products Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-section grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 products\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 two-column-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-title\cf5 \strokec5 ">\cf4 \strokec4 Products\cf5 \strokec5 </h2>\cf4 \strokec4 \
+                \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Website Creation\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 AI Integration\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Online AI Chat\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Website Maintenance\cf5 \strokec5 </li>\cf4 \strokec4 \
+                \cf5 \strokec5 </ul>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Products\cf5 \strokec5 " \cf6 \strokec6 style\cf5 \strokec5 ="\cf7 \strokec7 width:100%; height:300px; object-fit:cover;\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Reviews Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-section grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 reviews\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 two-column-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Reviews\cf5 \strokec5 " \cf6 \strokec6 style\cf5 \strokec5 ="\cf7 \strokec7 width:100%; height:300px; object-fit:cover;\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-title\cf5 \strokec5 ">\cf4 \strokec4 Reviews\cf5 \strokec5 </h2>\cf4 \strokec4 \
+                \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 "YieldSync transformed our online presence completely. Our website traffic increased by 300%!" - Luxury Real Estate Co.\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 "The AI integration has streamlined our customer service. Response times cut by 70%." - Financial Services Inc.\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 "Professional, innovative, and delivered beyond our expectations." - Hospitality Group\cf5 \strokec5 </li>\cf4 \strokec4 \
+                \cf5 \strokec5 </ul>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Sectors Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-section grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 sectors\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 two-column-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-title\cf5 \strokec5 ">\cf4 \strokec4 Sectors\cf5 \strokec5 </h2>\cf4 \strokec4 \
+                \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Ecommerce\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Hospitality\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Travel\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 B2B\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Financial & Professional\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Real Estate\cf5 \strokec5 </li>\cf4 \strokec4 \
+                    \cf5 \strokec5 <li>\cf4 \strokec4 Local\cf5 \strokec5 </li>\cf4 \strokec4 \
+                \cf5 \strokec5 </ul>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Sectors\cf5 \strokec5 " \cf6 \strokec6 style\cf5 \strokec5 ="\cf7 \strokec7 width:100%; height:300px; object-fit:cover;\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Services Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-section grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 services\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 two-column-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 Services\cf5 \strokec5 " \cf6 \strokec6 style\cf5 \strokec5 ="\cf7 \strokec7 width:100%; height:300px; object-fit:cover;\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-title\cf5 \strokec5 ">\cf4 \strokec4 Services\cf5 \strokec5 </h2>\cf4 \strokec4 \
+                \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+                    \cf5 \strokec5 <div>\cf4 \strokec4 \
+                        \cf5 \strokec5 <h3>\cf4 \strokec4 Paid Media\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                        \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 PPC\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Paid Social\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Programmatic\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Meta Advertising\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 PPC Consultancy\cf5 \strokec5 </li>\cf4 \strokec4 \
+                        \cf5 \strokec5 </ul>\cf4 \strokec4 \
+                    \cf5 \strokec5 </div>\cf4 \strokec4 \
+                    \cf5 \strokec5 <div>\cf4 \strokec4 \
+                        \cf5 \strokec5 <h3>\cf4 \strokec4 Digital PR & Content\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                        \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Consumer PR\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Content Marketing\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 DPR Training\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Influencer\cf5 \strokec5 </li>\cf4 \strokec4 \
+                        \cf5 \strokec5 </ul>\cf4 \strokec4 \
+                    \cf5 \strokec5 </div>\cf4 \strokec4 \
+                    \cf5 \strokec5 <div>\cf4 \strokec4 \
+                        \cf5 \strokec5 <h3>\cf4 \strokec4 Data & AI\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                        \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Data Science\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 AI & Automation\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Luminr\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Analytics\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Tag Management\cf5 \strokec5 </li>\cf4 \strokec4 \
+                        \cf5 \strokec5 </ul>\cf4 \strokec4 \
+                    \cf5 \strokec5 </div>\cf4 \strokec4 \
+                    \cf5 \strokec5 <div>\cf4 \strokec4 \
+                        \cf5 \strokec5 <h3>\cf4 \strokec4 Strategy\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                        \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Audits & Consultancy\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Market Research\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Media Planning\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 In-housing\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 International Marketing\cf5 \strokec5 </li>\cf4 \strokec4 \
+                        \cf5 \strokec5 </ul>\cf4 \strokec4 \
+                    \cf5 \strokec5 </div>\cf4 \strokec4 \
+                    \cf5 \strokec5 <div>\cf4 \strokec4 \
+                        \cf5 \strokec5 <h3>\cf4 \strokec4 Experience\cf5 \strokec5 </h3>\cf4 \strokec4 \
+                        \cf5 \strokec5 <ul \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-list\cf5 \strokec5 ">\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Creative\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 CRO\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Technology\cf5 \strokec5 </li>\cf4 \strokec4 \
+                            \cf5 \strokec5 <li>\cf4 \strokec4 Video\cf5 \strokec5 </li>\cf4 \strokec4 \
+                        \cf5 \strokec5 </ul>\cf4 \strokec4 \
+                    \cf5 \strokec5 </div>\cf4 \strokec4 \
+                \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- About Section -->\cf4 \strokec4 \
+    \cf5 \strokec5 <section \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-section grid-container\cf5 \strokec5 " \cf6 \strokec6 id\cf5 \strokec5 ="\cf7 \strokec7 about\cf5 \strokec5 ">\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 two-column-grid\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <h2 \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 content-title\cf5 \strokec5 ">\cf4 \strokec4 About Us\cf5 \strokec5 </h2>\cf4 \strokec4 \
+                \cf5 \strokec5 <p>\cf4 \strokec4 YieldSync is a premier digital marketing agency specializing in creating sophisticated online experiences for real estate, corporate, and local businesses. Our team combines strategic thinking with cutting-edge technology to deliver measurable results.\cf5 \strokec5 </p>\cf4 \strokec4 \
+                \cf5 \strokec5 <p>\cf4 \strokec4 Founded on the principles of innovation and excellence, we help our clients synchronize their digital presence with their business goals.\cf5 \strokec5 </p>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <div>\cf4 \strokec4 \
+                \cf5 \strokec5 <img \cf6 \strokec6 src\cf5 \strokec5 ="\cf7 \strokec7 https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80\cf5 \strokec5 " \cf6 \strokec6 alt\cf5 \strokec5 ="\cf7 \strokec7 About Us\cf5 \strokec5 " \cf6 \strokec6 style\cf5 \strokec5 ="\cf7 \strokec7 width:100%; height:300px; object-fit:cover;\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </section>\cf4 \strokec4 \
+\
+    \cf3 \strokec3 <!-- Footer -->\cf4 \strokec4 \
+    \cf5 \strokec5 <footer>\cf4 \strokec4 \
+        \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 footer-content\cf5 \strokec5 ">\cf4 \strokec4 \
+            \cf5 \strokec5 <div \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 footer-links\cf5 \strokec5 ">\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #products\cf5 \strokec5 ">\cf4 \strokec4 Products\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #reviews\cf5 \strokec5 ">\cf4 \strokec4 Reviews\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #sectors\cf5 \strokec5 ">\cf4 \strokec4 Sectors\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #services\cf5 \strokec5 ">\cf4 \strokec4 Services\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #about\cf5 \strokec5 ">\cf4 \strokec4 About Us\cf5 \strokec5 </a>\cf4 \strokec4 \
+                \cf5 \strokec5 <a \cf6 \strokec6 href\cf5 \strokec5 ="\cf7 \strokec7 #\cf5 \strokec5 ">\cf4 \strokec4 Contact\cf5 \strokec5 </a>\cf4 \strokec4 \
+            \cf5 \strokec5 </div>\cf4 \strokec4 \
+            \cf5 \strokec5 <p \cf6 \strokec6 class\cf5 \strokec5 ="\cf7 \strokec7 copyright\cf5 \strokec5 ">\cf4 \strokec4 \'a9 2023 YieldSync. All rights reserved.\cf5 \strokec5 </p>\cf4 \strokec4 \
+        \cf5 \strokec5 </div>\cf4 \strokec4 \
+    \cf5 \strokec5 </footer>\cf4 \strokec4 \
+\
+    \cf5 \strokec5 <script>\cf4 \strokec4 \
+        // Scroll animations\
+        window.addEventListener('scroll', function() \{\
+            const heroTitle = document.querySelector('.hero-title');\
+            const scrollPosition = window.scrollY;\
+            \
+            // Title transparency effect\
+            if (scrollPosition > 50) \{\
+                heroTitle.style.opacity = '0.3';\
+            \} else \{\
+                heroTitle.style.opacity = '1';\
+            \}\
+            \
+            // Title expansion effect\
+            if (scrollPosition > 100) \{\
+                heroTitle.style.fontSize = '6rem';\
+                heroTitle.style.width = '100%';\
+            \} else \{\
+                heroTitle.style.fontSize = '4rem';\
+                heroTitle.style.width = 'auto';\
+            \}\
+            \
+            // Fade in content lists\
+            const contentLists = document.querySelectorAll('.content-list');\
+            contentLists.forEach(list => \{\
+                const listPosition = list.getBoundingClientRect().top;\
+                const screenPosition = window.innerHeight / 1.3;\
+                \
+                if (listPosition < screenPosition) \{\
+                    list.classList.add('fade-in');\
+                \}\
+            \});\
+        \});\
+        \
+        // Initialize content lists as not visible\
+        document.addEventListener('DOMContentLoaded', function() \{\
+            const contentLists = document.querySelectorAll('.content-list');\
+            contentLists.forEach(list => \{\
+                list.classList.remove('fade-in');\
+            \});\
+        \});\
+    \cf5 \strokec5 </script>\cf4 \strokec4 \
+\cf5 \strokec5 </body>\cf4 \strokec4 \
+\cf5 \strokec5 </html>\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \strokec2 #\cf8 \strokec8  YieldSync Marketing Agency Website
+\f0\b0 \cf4 \strokec4 \
+\
+A fully functional marketing agency website with Stripe integration for payments.\
+\
+
+\f1\b \cf2 \strokec2 ##\cf8 \strokec8  Features
+\f0\b0 \cf4 \strokec4 \
+\
+\cf2 \strokec2 -\cf4 \strokec4  Modern, responsive design\
+\cf2 \strokec2 -\cf4 \strokec4  Stripe payment integration\
+\cf2 \strokec2 -\cf4 \strokec4  Portfolio showcase\
+\cf2 \strokec2 -\cf4 \strokec4  Service pricing plans\
+\cf2 \strokec2 -\cf4 \strokec4  Contact form\
+\cf2 \strokec2 -\cf4 \strokec4  Smooth animations\
+\cf2 \strokec2 -\cf4 \strokec4  Professional typography\
+\
+
+\f1\b \cf2 \strokec2 ##\cf8 \strokec8  Setup Instructions
+\f0\b0 \cf4 \strokec4 \
+\
+\cf2 \strokec2 1.\cf4 \strokec4  
+\f1\b \cf2 \strokec2 **\cf4 \strokec4 Clone the repository\cf2 \strokec2 **
+\f0\b0 \cf4 \strokec4 \
+   ```bash\
+   git clone \cf5 \strokec5 <your-repo-url>\cf4 \strokec4 \
+   cd yieldsync-website\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+}
